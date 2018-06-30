@@ -44,10 +44,7 @@ class PigLatinizer
   end 
   
   def latinize(word)
-    binding.pry
-    idx = word.index do |letter| 
-      letter == "a"
-    end 
+    idx = word.index(/[aeiouAEIOU]/)
     
     binding.pry
     
