@@ -1,11 +1,11 @@
 require 'pry'
 class PigLatinizer 
  attr_reader :text
-  VOWELS = ["a","e","i","o","u"]
+  VOWELS = %w{a e i o u}
   
   def piglatinize(text)
-    splitText = text.split("")
-    if VOWELS.include?(splitText[0].downcase)
+    
+    if VOWELS.include?(text[0].downcase)
       piglatin = splitText << "way"
       final = piglatin.join("")
     end
