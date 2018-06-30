@@ -44,10 +44,8 @@ class PigLatinizer
   end 
   
   def latinize(word)
-    f = word[0]
-    rest = word[1..word.length]
-    index = word.each.with_index(0) do |letter, i| 
-      return i if VOWELS.include?(letter)
+    word.find_index do |letter| 
+      VOWELS.include?(letter)
     end 
     
     binding.pry
