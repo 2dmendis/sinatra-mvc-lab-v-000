@@ -44,6 +44,7 @@ class PigLatinizer
   end 
   
   def latinize(word)
+    binding.pry
     idx = word.find_index do |letter| 
       VOWELS.include?(letter)
     end 
