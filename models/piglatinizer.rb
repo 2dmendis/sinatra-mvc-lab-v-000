@@ -4,7 +4,10 @@ class PigLatinizer
   VOWELS = %w{a e i o u}
   
   def piglatinize(text)
-    if(text)
+    words = text.split(" ")
+    if(words.length == 1)
+      return words.first + "ay"
+    end 
     
     if VOWELS.include?(text[0].downcase)
       return text + "way"
