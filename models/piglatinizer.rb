@@ -22,7 +22,7 @@ class PigLatinizer
       end 
      
       @new_word_array << ending #add the ending 'ay' to the array
-      @new_word_array = @new_word_array.flatten!
+      
       @new_word = @new_word_array.join #join the array to make the piglatin word
      
       @new_sentence << @new_word #push it into a new array to complete the sentence 
