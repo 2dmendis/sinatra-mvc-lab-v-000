@@ -6,11 +6,7 @@ class PigLatinizer
   def piglatinize(text)
   
     if VOWELS.include?(text[0].downcase)
-      split_text = text.to_a
-      piglatin =  split_text << "way"
-      final = piglatin.join("")
-      binding.pry
-      return final 
+      return text + "way"
     end
   
     
