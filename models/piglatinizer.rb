@@ -28,6 +28,6 @@ class PigLatinizer
     end 
     @final_sentence = @new_sentence.join
     @final_sentence
-    binding.pry
+    
   end 
 end 
