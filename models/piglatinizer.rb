@@ -31,6 +31,10 @@ class PigLatinizer
     @final_sentence = @new_sentence.join(" ") #join the array to make a string 
     
     @final_sentence
+  end 
+  
+  def to_piglatin(word) 
+    word.split(" ")
     
   end 
 end 
