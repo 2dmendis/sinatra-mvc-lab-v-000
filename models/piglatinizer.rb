@@ -41,6 +41,7 @@ class PigLatinizer
     latinized = word.map do |x|
       piglatinize(x)
     end 
+    binding.pry
     latinized.join(" ")
   end 
 end 
