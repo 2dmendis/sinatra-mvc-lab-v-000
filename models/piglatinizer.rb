@@ -47,6 +47,8 @@ class PigLatinizer
     f = word[0]
     rest = word[1..word.length]
     
+    
+    
     VOWELS.include?(f) ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
   end
   
