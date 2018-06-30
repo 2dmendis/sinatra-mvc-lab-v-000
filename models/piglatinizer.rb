@@ -45,7 +45,7 @@ class PigLatinizer
   
   def latinize(word)
     f = word[0]
-    rest = word.splice(1)
+    rest = word[1..word.length]
     "#{ rest }#{ f }ay"
   end
   
