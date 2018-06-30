@@ -1,8 +1,5 @@
 require 'pry'
 class PigLatinizer 
- attr_reader :text
-  VOWELS = %w{a e i o u A E I O U}
-  
   def piglatinize(text)
     words = text.split(" ")
     if(words.length == 1)
