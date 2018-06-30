@@ -50,12 +50,12 @@ class PigLatinizer
   end
   
   
-  def to_piglatin(words) 
-    word = words.split(" ")
-    latinized = word.map do |x|
-      piglatinize(x)
-    end 
-    binding.pry
-    latinized.join(" ")
-  end 
+  # def to_piglatin(words) 
+  #   word = words.split(" ")
+  #   latinized = word.map do |x|
+  #     piglatinize(x)
+  #   end 
+  #   binding.pry
+  #   latinized.join(" ")
+  # end 
 end 
