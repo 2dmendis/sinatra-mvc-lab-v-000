@@ -24,10 +24,10 @@ class PigLatinizer
       @new_word_array << ending
       @new_word = @new_word_array.join
       @new_sentence.push(@new_word)
-   
+   puts @new_word_array
     end 
     @final_sentence = @new_sentence.join
     @final_sentence
-    puts @final_sentence
+    
   end 
 end 
