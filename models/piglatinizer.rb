@@ -8,7 +8,7 @@ class PigLatinizer
     @new_sentence = []
     @new_word = []
     @new_word_array = []
-    
+    text = text.downcase
     textArray = text.split(" ") #split sentence into array
     
     textArray.map do |word| #for each word in the array
@@ -29,7 +29,7 @@ class PigLatinizer
    
     end 
     @final_sentence = @new_sentence.join(" ") #join the array to make a string 
-    puts @final_sentence
+    
     @final_sentence
     
   end 
