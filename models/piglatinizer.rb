@@ -6,7 +6,7 @@ class PigLatinizer
   def piglatinize(text)
     words = text.split(" ")
     if(words.length == 1)
-      
+      latinize(words.first)
     end 
     
     if VOWELS.include?(text[0].downcase)
@@ -40,7 +40,7 @@ class PigLatinizer
   end 
   
   def latinize(word)
-    r = word.first.reverse
+    r = word.reverse
     return r + "ay"
   end
   
