@@ -1,6 +1,7 @@
 require 'pry'
 class PigLatinizer 
  attr_reader :text
+  VOWELS = ["a","e","i","o","u"]
   
   def piglatinize(text)
     
