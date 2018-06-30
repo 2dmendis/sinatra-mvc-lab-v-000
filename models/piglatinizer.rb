@@ -18,15 +18,16 @@ class PigLatinizer
       
       split_word.map do |splitWord| 
         
-        @new_word_array.unshift(splitWord) #first add in the concesents and then the vowels
+        @new_word_array.unshift(splitWord) #first add in the consonants and then the vowels at the zero position
       end 
      
-      @new_word_array << ending
-      @new_word = @new_word_array.join
-      @new_sentence.push(@new_word)
-   puts @new_sentence
+      @new_word_array << ending #add the ending 'ay' to the array
+      @new_word = @new_word_array.join #join the array to make the piglatin word
+      @new_sentence.push(@new_word) #push it into a new array to complete the sentence 
+   
     end 
-    @final_sentence = @new_sentence.join
+    @final_sentence = @new_sentence.join #join the array to make a string 
+    puts @final_sentence
     @final_sentence
     
   end 
