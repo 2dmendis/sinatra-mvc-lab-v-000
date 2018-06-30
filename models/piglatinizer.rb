@@ -48,9 +48,6 @@ class PigLatinizer
     first = word[0..idx-1]
     last = word[idx..word.length]
     
-    binding.pry
-    
-    
     if idx == 0 ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
   end
   
