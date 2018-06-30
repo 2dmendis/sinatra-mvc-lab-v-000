@@ -4,12 +4,10 @@ class PigLatinizer
   VOWELS = %w{a e i o u}
   
   def piglatinize(text)
-  
     if VOWELS.include?(text[0].downcase)
       return text + "way"
     end
   
-    
     ending = "ay"
     @new_sentence = []
     @new_word = []
