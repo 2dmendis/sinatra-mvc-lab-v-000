@@ -8,12 +8,8 @@ class PigLatinizer
     if VOWELS.include?(splitText[0].downcase)
       piglatin = splitText << "way"
       final = piglatin.join("")
-      binding.pry
-    else 
-      
-    end 
-    
-    
+    end
+  
     
     ending = "ay"
     @new_sentence = []
@@ -39,6 +35,7 @@ class PigLatinizer
     end 
     @final_sentence = @new_sentence.join(" ") #join the array to make a string 
     @final_sentence
+ 
   end 
   
   def to_piglatin(words) 
