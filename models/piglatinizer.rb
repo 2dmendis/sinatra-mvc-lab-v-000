@@ -51,7 +51,7 @@ class PigLatinizer
     binding.pry
     
     
-    VOWELS.include?(f) ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
+    if idx == 0 ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
   end
   
   
