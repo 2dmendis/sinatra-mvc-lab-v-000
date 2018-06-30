@@ -45,6 +45,8 @@ class PigLatinizer
   
   def latinize(word)
     idx = word.index(/[aeiouAEIOU]/)
+    first = word[0..idx]
+    last = word[idx..word.length]
     
     binding.pry
     
