@@ -1,6 +1,6 @@
 require 'pry'
 class PigLatinizer 
- 
+ attr_reader :text
   
   def piglatinize(text)
     
@@ -27,7 +27,6 @@ class PigLatinizer
    
     end 
     @final_sentence = @new_sentence.join(" ") #join the array to make a string 
-    
     @final_sentence
   end 
   
