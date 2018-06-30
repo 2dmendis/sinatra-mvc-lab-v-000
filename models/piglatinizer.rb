@@ -46,7 +46,8 @@ class PigLatinizer
   def latinize(word)
     f = word[0]
     rest = word[1..word.length]
-    "#{ rest }#{ f }ay"
+    
+    VOWELS.include?(f) ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
   end
   
   
