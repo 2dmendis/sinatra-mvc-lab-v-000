@@ -4,10 +4,12 @@ class PigLatinizer
   VOWELS = %w{a e i o u}
   
   def piglatinize(text)
-    binding.pry
+  
     if VOWELS.include?(text[0].downcase)
-      piglatin = splitText << "way"
+      split_text = text.to_a
+      piglatin =  split_text << "way"
       final = piglatin.join("")
+      binding.pry
       return final 
     end
   
