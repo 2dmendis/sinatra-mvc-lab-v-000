@@ -4,7 +4,8 @@ class PigLatinizer
   VOWELS = ["a","e","i","o","u"]
   
   def piglatinize(text)
-    
+    splitText = text.split("")
+    binding.pry
     ending = "ay"
     @new_sentence = []
     @new_word = []
