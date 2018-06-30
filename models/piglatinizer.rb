@@ -46,7 +46,7 @@ class PigLatinizer
   def latinize(word)
     idx = word.index(/[aeiouAEIOU]/)
     first = word[0..idx-1]
-    last = word[idx..word.length]
+    rest = word[idx..word.length]
     
     idx == 0 ? "#{ rest }#{ f }way" : "#{ rest }#{ f }ay"
   end
