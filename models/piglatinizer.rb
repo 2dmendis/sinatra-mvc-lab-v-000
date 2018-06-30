@@ -5,7 +5,7 @@ class PigLatinizer
   
   def piglatinize(text)
     if VOWELS.include?(text[0].downcase)
-      return text + "way"
+      text + "way"
     end
   
     ending = "ay"
