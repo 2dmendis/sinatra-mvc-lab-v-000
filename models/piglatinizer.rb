@@ -12,7 +12,16 @@ class PigLatinizer
     return words.map do |word|
       latinize(word)
     end.join(" ")
+  end 
+  
+  def latinize(word)
+    idx = word.index(/[aeiouAEIOU]/)
+    f = word[0..idx-1]
+    rest = word[idx..word.length] if word.length > 1
     
+    idx == 0 ? "#{ f }way" : "#{ rest }#{ f }ay"
+  end
+  
     # if VOWELS.include?(text[0].downcase)
     #   return text + "way"
     # end
@@ -41,16 +50,6 @@ class PigLatinizer
     # end 
     # @final_sentence = @new_sentence.join(" ") #join the array to make a string 
     # @final_sentence
-  end 
-  
-  def latinize(word)
-    idx = word.index(/[aeiouAEIOU]/)
-    f = word[0..idx-1]
-    rest = word[idx..word.length] if word.length > 1
-    
-    idx == 0 ? "#{ f }way" : "#{ rest }#{ f }ay"
-  end
-  
   
   # def to_piglatin(words) 
   #   word = words.split(" ")
