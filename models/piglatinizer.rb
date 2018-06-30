@@ -8,6 +8,7 @@ class PigLatinizer
     if VOWELS.include?(text[0].downcase)
       piglatin = splitText << "way"
       final = piglatin.join("")
+      return final 
     end
   
     
