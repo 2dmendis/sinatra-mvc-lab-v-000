@@ -9,7 +9,9 @@ class PigLatinizer
       return latinize(words.first)
     end 
     
-    
+    return words.map do |word|
+      latinize(word)
+    end.join(" ")
     
     # if VOWELS.include?(text[0].downcase)
     #   return text + "way"
