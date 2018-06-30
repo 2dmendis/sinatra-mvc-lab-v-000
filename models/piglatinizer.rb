@@ -44,8 +44,9 @@ class PigLatinizer
   end 
   
   def latinize(word)
-    r = word.reverse
-    return r + "ay"
+    f = word[0]
+    rest = word.slice(1)
+    return  "#{ rest }#{ f }ay"
   end
   
   
