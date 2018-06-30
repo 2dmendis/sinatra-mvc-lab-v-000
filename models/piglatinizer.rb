@@ -34,7 +34,10 @@ class PigLatinizer
   end 
   
   def to_piglatin(word) 
-    word.split(" ")
+    word = word.split(" ")
+    word = word.map do |x|
+      piglatinize(x)
+    end 
     
   end 
 end 
