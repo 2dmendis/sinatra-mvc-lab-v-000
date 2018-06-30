@@ -9,16 +9,16 @@ class PigLatinizer
     @new_word = []
     @new_word_array = []
     
-    textArray = text.split(" ")
+    textArray = text.split(" ") #split sentence into array
     
-    textArray.map do |word|
+    textArray.map do |word| #for each word in the array
       @new_word.clear 
       @new_word_array.clear
-      split_word = word.split(/([aeiou].*)/)
+      split_word = word.split(/([aeiou].*)/) #split that word at the first vowel
       
-      split_word.map do |splitWord|
+      split_word.map do |splitWord| 
         
-        @new_word_array.unshift(splitWord)
+        @new_word_array.unshift(splitWord) #first add in the concesents and then the vowels
       end 
      
       @new_word_array << ending
